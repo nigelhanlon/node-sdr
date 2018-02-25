@@ -1,0 +1,45 @@
+{
+  "name": "node-sdr",
+  "version": "1.0.0",
+  "description": "A collection of Node.js tools for Software Defined Radio",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint '**/*.{js}' --quiet",
+    "format": "prettier --write '**/*.js'"
+  },
+  "bin": {
+    "sdr-info": "./sdr-info/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigelhanlon/node-sdr.git"
+  },
+  "keywords": [
+    "node",
+    "sdr",
+    "rtl",
+    "radio"
+  ],
+  "author": "Nigel Hanlon <nigel@mapwolf.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nigelhanlon/node-sdr/issues"
+  },
+  "homepage": "https://github.com/nigelhanlon/node-sdr#readme",
+  "jest": {
+    "verbose": true,
+    "projects": ["<rootDir>/sdr-info/tests/*"]
+  },
+  "dependencies": {
+    "rtl-sdr": "^0.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jest": "^21.12.2",
+    "jest": "^22.4.2",
+    "prettier": "^1.10.2"
+  }
+}

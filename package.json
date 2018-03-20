@@ -21,7 +21,7 @@
     "rtl",
     "radio"
   ],
-  "author": "Nigel Hanlon <nigel@mapwolf.net>",
+  "author": "Nigel Hanlon <nigel.hanlon@nearform.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nigelhanlon/node-sdr/issues"
@@ -29,7 +29,9 @@
   "homepage": "https://github.com/nigelhanlon/node-sdr#readme",
   "jest": {
     "verbose": true,
-    "projects": ["<rootDir>/sdr-info/tests/*"]
+    "projects": [
+      "<rootDir>/sdr-info/tests/*"
+    ]
   },
   "dependencies": {
     "rtl-sdr": "^0.1.4"
